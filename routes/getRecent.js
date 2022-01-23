@@ -20,13 +20,8 @@ router.get('/', async (req, res) => {
                     if (!page) {
                         page = 1
                     }
-                    let options = {
-                        headers: {
-                          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36'
-                        }
-                      }
                     const siteUrl = `https://asianembed.io/?page=${page}`
-                    const { data } = await axios.get(siteUrl, options)
+                    const { data } = await axios.get(siteUrl)
                     const $ = cheerio.load(data)
                     let dataArr = []
                     const elem = $('ul.listing.items')
