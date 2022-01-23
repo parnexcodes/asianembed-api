@@ -1,0 +1,27 @@
+{
+  "name": "asianembed-api",
+  "version": "1.0.0",
+  "description": "A rest api which scrapes data from asianembed or asianload. Made using NodeJS, Express and Cheerio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parnexcodes/asianembed-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.10",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/parnexcodes/asianembed-api/issues"
+  },
+  "homepage": "https://github.com/parnexcodes/asianembed-api#readme"
+}
